@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Jhonny Díaz, Cátedra PWA</title>
+    <!--viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!--css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+</head>
+<body class="container fondo ">
+<section class="row justify-content-center mt-5 ">
+    <div class="col-12 col-md-6 col-lg-5 align-self-center">
+        <div class="card text-white bg-primary mb-3">
+            <div class="card-header text-center"><h1>Clima hoy</h1></div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group ">
+                        <label for="busqueda" class="mt-3 mb-3">Ciudad a buscar:</label>
+                        <input title="Search" id="busqueda" class="form-control" type="text" required
+                               placeholder="buenos aires"/>
+                        <button id="enviar" type="button" class="btn btn-info text-white mt-3">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="informaciongenerada" class="row justify-content-center ">
+        <template id="template-ciudad">
+            <div class="card border-primary mb-3 col-12 col-md-6 col-lg-5 align-self-center">
+                <div class="card-header">Header</div>
+                <div class="card-body text-primary row">
+                    <div class="col-12 col-sm-6">
+                        <ul>
+                            <li>Temperatura actual</li>
+                            <li>Temperatura Máxima</li>
+                            <li>Temperatura Mínima</li>
+                            <li>Humedad</li>
+                            <li>sensación térmica</li>
+                            <li>presión atmosférica</li>
+                            <li>velocidad del viento</li>
+                            <li>estado del clima</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <img src="" alt="icono del clima">
+                    </div>
+
+                    <div class="mapa text-center">
+
+                    </div>
+                    <div class="text-center">
+                        <button id="iniciarNuevo" type="button" class="btn btn-primary mt-3 w-50" onclick="location.reload()">Buscar otra ciudad
+                        </button>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </template>
+    </div>
+
+
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
