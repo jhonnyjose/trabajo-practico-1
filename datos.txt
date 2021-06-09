@@ -1,0 +1,7 @@
+dirección del repo
+
+https://github.com/jhonnyjose/trabajo-practico-1
+
+datos del clima
+
+https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2
